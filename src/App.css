@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+
+.App {
+  background-color: rgba(5, 130, 176, 0.904);
+ 
+  color: white;
+  display: flex;
+ flex-flow: row wrap;
+ padding-left: 80px;
+ 
+}
+
+.main {
+  width: 1000px;
+
+  
+ 
+margin-right: -600px;
+}
+
+
+body {
+  color: #000;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+    border: #cee78c solid;
+  border-radius: 15px;
+
+  height: 440px;
+
+
+}
+
+
+
+
+
+.ag-courses-item_title {
+   
+
+  overflow: hidden;
+
+  font-weight: bold;
+  
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 12px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+ 
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+ 
+}
+
+
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
